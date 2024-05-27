@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav {
+    background-color: rgb(100, 146, 140);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+    /* border-color: black; */
+    /* margin: 5px; */
+    /* box-shadow: aqua; */
+}
+
+.gamecontenar{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Contenar{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(214, 84, 62);
+}
+
+.info{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: rgb(44, 98, 167);
+    border-radius: 5px;
+}
+
+#reset {
+    /* margin: 10px; */
+    margin: 10px;
+    background-color: rgb(114, 60, 114);
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+
+.imgbox{
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.reset{
+    margin:0 23px;
+    padding: 1px 18px;
+    background: teal;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: brown;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px) {
+    .gamecontenar{
+        flex-wrap: wrap;
+    }
+
+    .gameInfo{
+        margin-top: 34px;
+    }
+
+.gameInfo h1{
+    font-size: 1.5rem;
+}
+
+.Contenar{
+    grid-template-columns: repeat(3,20vm);
+    grid-template-rows: repeat(3,20vm);
+}
+    
+}
